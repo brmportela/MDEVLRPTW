@@ -1,0 +1,28 @@
+StringID	Type	x	y	demand	ReadyTime	DueDate	ServiceTime
+D0	d	40	50	0	0	3390	0
+D1	d	19	53	0	0	3390	0
+S0	f	40	50	0	0	3390	0
+S1d	f	19	53	0	0	3390	0
+S1	f	77	52	0	0	3390	0
+S14	f	27	10	0	0	3390	0
+S19	f	77	30	0	0	3390	0
+C24	c	25	50	10	2645	3285	90
+C20	c	30	50	10	2650	3290	90
+C98	c	58	75	20	79	719	90
+C75	c	45	65	20	939	1579	90
+C79	c	87	30	10	1082	1722	90
+C88	c	65	60	30	27	667	90
+C31	c	10	35	20	2020	2660	90
+C82	c	75	55	20	268	908	90
+C59	c	38	10	10	1056	1696	90
+C22	c	28	52	20	2647	3287	90
+C52	c	25	35	10	162	802	90
+C73	c	92	30	10	888	1528	90
+C43	c	33	35	10	17	657	90
+C85	c	86	46	30	503	1143	90
+C7	c	58	70	20	27	667	90
+Q Vehicle fuel tank capacity /77.75/
+C Vehicle load capacity /700.0/
+r fuel consumption rate /1.0/
+g inverse refueling rate /3.47/
+v average Velocity /1.0/
