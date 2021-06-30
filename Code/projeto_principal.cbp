@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Projeto PGCC" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/projeto_principal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="run instance/c101C21.txt 0 40 4" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-DIL_STD" />
+					<Add directory="/opt/ibm/ILOG/CPLEX_Studio1263/cplex/include" />
+					<Add directory="/opt/ibm/ILOG/CPLEX_Studio1263/concert/include" />
+				</Compiler>
+				<Linker>
+					<Add library="m" />
+					<Add library="pthread" />
+					<Add directory="/opt/ibm/ILOG/CPLEX_Studio1263/cplex/lib/x86-64_linux/static_pic" />
+					<Add directory="/opt/ibm/ILOG/CPLEX_Studio1263/concert/lib/x86-64_linux/static_pic" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/projeto_principal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="run instance/pr16.txt 0 50 1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="header/FileHelper.h" />
+		<Unit filename="header/Helper.h" />
+		<Unit filename="header/grafo/Grafo.h" />
+		<Unit filename="header/grafo/Vertice.h" />
+		<Unit filename="header/heuristic/Heuristic.h" />
+		<Unit filename="header/heuristic/Instance.h" />
+		<Unit filename="header/heuristic/Vehicle.h" />
+		<Unit filename="header/structure/Point.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="source/FileHelper.cpp" />
+		<Unit filename="source/Helper.cpp" />
+		<Unit filename="source/grafo/Grafo.cpp" />
+		<Unit filename="source/grafo/Vertice.cpp" />
+		<Unit filename="source/heuristic/Heuristic.cpp" />
+		<Unit filename="source/heuristic/Instance.cpp" />
+		<Unit filename="source/heuristic/Vehicle.cpp" />
+		<Unit filename="source/structure/Point.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
